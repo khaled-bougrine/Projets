@@ -1,0 +1,123 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <title>Abscences</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif; height: 100%; background-image:url("img/back.jpg");  background-position: center ;background-repeat: no-repeat; background-size: 1370px 1200px; }
+
+.container {
+  padding-left: 150px;
+  padding-right: 300px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif; height: 100%; background-image:url("img/back.jpg");  background-position: center ;background-repeat: no-repeat; background-size: 1370px 1030px; }
+
+
+
+
+</style>
+
+<head>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-primary " style="background-color: #0B2161 ; height: 50px;">
+        <h1 class="navbar-brand text-white"><i>Système Scolaire</i></h1>
+       <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            </div>
+
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                               <a class="nav-link text-white" href="#" > Khaled The BOSS <img src="wife.png"><span class="sr-only">(current)</span></a>
+                    </li>
+                    <br>
+                    <a style="height: 30px; margin-top: 15px;" href="interface_login.html" class="btn btn-outline-success">Déconnexion</a>
+                  </ul>
+            </form>
+    </nav>
+</head>
+
+<body>
+
+
+
+
+
+
+
+<div class="container">
+
+<br>
+
+
+
+  <h3 class="text-white"><b>Abscence</b></h3>
+         
+  <table class="table">
+    <thead>
+      <tr class="active">
+        <th style="text-align: center;">Matère</th><br>
+        <th style="text-align: center;">Date d'abscence</th>
+      </tr>
+      
+    </thead>
+    <tbody>
+      <tr class="active" th:each="absence:${listAbsences}">
+        <td style="text-align: center;" th:text="${absence.matiere}">Physique</td>
+        <td style="text-align: center;"th:text="${absence.date}">22/07/1997</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+
+
+ 
+</html>
+
+
+
+
+ 
+
+
+ 
+
+
+
+

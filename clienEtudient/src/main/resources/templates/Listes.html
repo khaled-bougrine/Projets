@@ -1,0 +1,133 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+
+
+<head>
+    <title>Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--les liens pour le fichier CSS tableau-->
+    <link rel="stylesheet" href="Table.css">
+    <link rel="stylesheet" href="BtnStyle.css">
+
+
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("img/back.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1650px 1030px;
+
+
+    }
+    .wrapper {
+    display: grid;
+    grid-template-columns: none;
+    /*grid-auto-rows:minmax(100px, auto);*/
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 1em;
+    justify-items: stretch;
+    align-items: stretch;
+    width: 400px;
+    position: relative;
+    left: 360px;
+    
+  }
+
+  .wrapper>div {
+    background: #eee;
+    padding: 2em;
+  }
+
+  .wrapper>div:nth-child(odd) {
+    background: #ddd;
+  }
+
+
+  .box1 {
+    /*align-self:start;*/
+    
+  
+    grid-row: 2/2;
+  }
+
+  .box2 {
+    /*align-self:end;*/
+  
+ 
+    grid-row:3/3;
+  }
+</style>
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-primary " style="background-color: #0B2161 ">
+        <h1 class="navbar-brand text-white"><i>Système Scolaire</i></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+        
+
+
+
+         
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <div class="wrapper">
+
+
+            <div class="card box1 text-white  " style="background-color:rgb(152, 200, 219)">
+                <a th:href="@{accueil}" class="text-white">
+                    <center><h4 class="card-title">Professeur</h4></center>
+                <div class="card-body">
+                   
+                </div>
+                </a>
+            </div>
+
+
+
+
+            <!-- <div class="column"> -->
+
+            <div class="card box2 text-white" style="background-color:rgb(152, 200, 219)">
+                <a th:href="@{/loginEtudient}" class="text-white">
+                    <center>
+                        <h3 class="card-title">Parent</h3>
+                       
+                    </center>
+                    <div class="card-body">
+                    </div>
+                </a> 
+            </div>
+
+
+</body>
+
+</html>
