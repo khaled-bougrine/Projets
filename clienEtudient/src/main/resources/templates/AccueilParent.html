@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
   <title>Accueil</title>
@@ -18,7 +18,7 @@
 
 <style>
 
-body {font-family: Arial, Helvetica, sans-serif; background-image:url("img/back.jpg");  height: 100%; background-position: center ;background-repeat: no-repeat; background-size: cover; }
+body {font-family: Arial, Helvetica, sans-serif; background-image:url("img/back.jpg");  height: 100%; background-position: center ;background-repeat: no-repeat; background-size: cover;  background-attachment: fixed;}
 
 .wrapper{
       display:grid;
@@ -213,7 +213,7 @@ p.test{
             </div> 
             <div class="card box7 text-white " style="background-color:#DF8600 ">
                 <a th:href="@{/remarques}">
-                    <center><h3 class="card-title">Remarques</h3>
+                    <center><h3 class="card-title text-white">Remarques</h3>
                         
                   <img class="card-img-left" src="img/comment.png" ></center>
                    <div class="card-body">
